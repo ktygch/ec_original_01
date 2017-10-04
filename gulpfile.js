@@ -9,14 +9,14 @@ gulp.task("js", function(){
     gulp.src(["js/**/*.js", "!js/min/**/*.js"])
     .pipe(plumber())
     .pipe(uglify())
-    .pipe(gulp.dest("./html/js/min"));
+    .pipe(gulp.dest("./js/min"));
 });
 
 gulp.task("sass", function(){
     gulp.src("sass/**/*.scss")
     .pipe(plumber())
     .pipe(sass())
-    .pipe(gulp.dest("./html/css"));
+    .pipe(gulp.dest("./css"));
 });
 
 gulp.task("default", function(){
