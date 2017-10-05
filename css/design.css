@@ -1,3 +1,6 @@
 @char-set : "utf-8";
 .header-nav-container {
   background: none !important; }
+
+#site-navigation ul li a {
+  color: #000 !important; }
