@@ -1,15 +1,42 @@
 @char-set: "utf-8";
 
-.header-nav-container{
-    background: none !important;
-}
+header#masthead{
+    margin-bottom: 0;
+    .inner.cf{
+        padding-bottom: 0;
+        .snav.cf{
+            padding-top: 0;
+        }
+        .site-description{
+            float: none;
+            width: auto;
+        }
+        .site-title{
+            float: none;
+            width: auto;
+            padding: 0;
+        }
+    }
 
-#site-navigation{
-    ul{
-        li{
-            a{
-                color: #000 !important;
+    #site-navigation{
+        .header-nav-container{
+            background: none !important;
+        }
+        ul{
+            li{
+                a{
+                    color: #000 !important;
+                }
             }
         }
+    }
+}
+
+.main-image{
+    height: 350px;
+    background: {
+        repeat: no-repeat;
+        position: center center;
+        size: cover;
     }
 }

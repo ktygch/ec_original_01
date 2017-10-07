@@ -1,6 +1,24 @@
 @char-set : "utf-8";
-.header-nav-container {
-  background: none !important; }
+header#masthead {
+  margin-bottom: 0; }
+  header#masthead .inner.cf {
+    padding-bottom: 0; }
+    header#masthead .inner.cf .snav.cf {
+      padding-top: 0; }
+    header#masthead .inner.cf .site-description {
+      float: none;
+      width: auto; }
+    header#masthead .inner.cf .site-title {
+      float: none;
+      width: auto;
+      padding: 0; }
+  header#masthead #site-navigation .header-nav-container {
+    background: none !important; }
+  header#masthead #site-navigation ul li a {
+    color: #000 !important; }
 
-#site-navigation ul li a {
-  color: #000 !important; }
+.main-image {
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
