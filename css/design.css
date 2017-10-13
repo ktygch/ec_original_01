@@ -7,7 +7,11 @@ header#masthead {
       padding-top: 0; }
     header#masthead .inner.cf .site-description {
       float: none;
-      width: auto; }
+      width: auto;
+      padding: 0;
+      color: #000;
+      background: none;
+      font-weight: normal; }
     header#masthead .inner.cf .site-title {
       float: none;
       width: auto;
