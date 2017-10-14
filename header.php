@@ -23,7 +23,14 @@
 <body <?php body_class(); ?>>
 
 	<header id="masthead" class="site-header" role="banner">
-		
+        <?php if( ( is_front_page() || is_home() ) && get_header_image() ): ?>
+            <div class="main-image" style="background-image: url('<?php header_image(); ?>');">
+                <?php /*
+                <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo('name'); ?>">
+                */ ?>
+            </div><!-- main-image -->
+        <?php endif; ?>
+	
 		<div class="inner cf">
 		
 			<?php if(! welcart_basic_is_cart_page()): ?>
@@ -90,14 +97,6 @@
 
 	</header><!-- #masthead -->
 
-	<?php if( ( is_front_page() || is_home() ) && get_header_image() ): ?>
-        <div class="main-image" style="background-image: url('<?php header_image(); ?>');">
-            <?php /*
-            <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo('name'); ?>">
-            */ ?>
-        </div><!-- main-image -->
-	<?php endif; ?>
-	
 	<?php 
 		if( is_front_page() || is_home() || welcart_basic_is_cart_page() || welcart_basic_is_member_page() ) {
 			$class = 'one-column';	

@@ -6,6 +6,8 @@ body{
 header#masthead{
     margin-bottom: 0;
     .inner.cf{
+        width: 100%;
+        box-sizing: border-box;
         padding-bottom: 0;
         .snav.cf{
             padding-top: 0;
@@ -27,7 +29,12 @@ header#masthead{
 
     #site-navigation{
         .header-nav-container{
+            width: 100%;
+            box-sizing: border-box;
             background: none !important;
+        }
+        .nav-menu-open{
+            background-color: #fff !important;
         }
         ul{
             li{
@@ -37,7 +44,7 @@ header#masthead{
             }
         }
     }
-}
+}//header#masthead
 
 .main-image{
     height: 350px;
@@ -45,5 +52,19 @@ header#masthead{
         repeat: no-repeat;
         position: center center;
         size: cover;
+    }
+}
+
+#main{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.itemimg{
+    a{
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
 }

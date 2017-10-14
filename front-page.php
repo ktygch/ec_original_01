@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<div id="primary" class="site-content">
+	<div id="primary" class="site-content col-xs-30 col-sm-30 col-md-20">
 		<div id="content" role="main">
 		
 		<?php if ( 'page' == get_option('show_on_front') ): ?>
@@ -22,12 +22,13 @@
 
 		<?php else: ?>
 
-			<section class="front-il cf">
+			<?php /*<section class="front-il cf">*/ ?>
+			<section class="row">
 			
 				<?php if( have_posts() ) : ?>
 					<?php while( have_posts() ) : the_post(); usces_the_item(); ?>
 					
-						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<article id="post-<?php the_ID(); ?>" <?php /*post_class();*/ ?> class="col-xs-15 col-sm-6">
 						
 							<div class="itemimg">
 								<a href="<?php the_permalink(); ?>"><?php usces_the_itemImage( 0, 300, 300 ); ?></a>
