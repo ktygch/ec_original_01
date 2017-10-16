@@ -6,7 +6,7 @@
 
 global $usces; ?>
 
-<aside id="secondary" class="widget-area col-xs-30 col-sm-30 col-md-10" role="complementary">
+<aside id="secondary" class="widget-area" role="complementary">
 
     <div class="columnleft">
     <?php if ( ! dynamic_sidebar( 'left-widget-area' ) ){
