@@ -1,6 +1,15 @@
-@char-set : "utf-8";
+@char-set "utf-8";
+@char-set "utf-8";
+.incart-btn {
+  margin-top: 0; }
+  .incart-btn a {
+    background-color: #000; }
+
+.skubutton {
+  background-color: #000 !important; }
+
 header#masthead {
-  margin-bottom: 0; }
+  margin-bottom: 20px; }
   header#masthead .inner.cf {
     width: 100%;
     box-sizing: border-box;
@@ -40,3 +49,6 @@ header#masthead {
 .itemimg a img {
   width: 100%;
   height: auto; }
+
+#secondary {
+  float: none; }

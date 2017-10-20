@@ -105,4 +105,4 @@
 		};
 	?>
 	
-	<div id="main" class="wrapper <?php echo $class;?>">
+	<div id="main" class="wrapper <?php /*echo $class;*/ ?>">
