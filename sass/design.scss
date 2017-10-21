@@ -6,7 +6,7 @@ body{
 
 header#masthead{
     margin-bottom: 20px;
-    border-bottom: 0;
+    border-bottom: none;
     .main-image{
         height: 350px;
         background: {
@@ -36,6 +36,7 @@ header#masthead{
             float: none;
             width: auto;
             padding: 0;
+            text-align: left;
         }
     }
     
@@ -53,8 +54,8 @@ header#masthead{
                     li{
                         a{
                             display: block;
-                            line-height: 25px;
-                            padding: 0 3%;
+                            //line-height: 25px;
+                            //padding: 0 3%;
                             color: #000 !important;
                         }
                     }
@@ -87,4 +88,16 @@ header#masthead{
 
 #secondary{
     float: none;
+    border-top: none;
+}
+
+
+//-------------------------------------
+//-------------------------------------
+//商品詳細ページ
+h1.item_page_title{
+    margin-bottom: 30px;
+    font: {
+        size: 33px;
+    }
 }
