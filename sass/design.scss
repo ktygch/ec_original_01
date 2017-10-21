@@ -6,12 +6,23 @@ body{
 
 header#masthead{
     margin-bottom: 20px;
+    border-bottom: 0;
+    .main-image{
+        height: 350px;
+        background: {
+            repeat: no-repeat;
+            position: center center;
+            size: cover;
+        }
+    }
+    
     .inner.cf{
         width: 100%;
         box-sizing: border-box;
-        padding-bottom: 0;
+        padding-bottom: 20px;
         .snav.cf{
             padding-top: 0;
+            margin-right: 0;
         }
         .site-description{
             float: none;
@@ -27,38 +38,42 @@ header#masthead{
             padding: 0;
         }
     }
-
-    #site-navigation{
-        .header-nav-container{
-            width: 100%;
-            box-sizing: border-box;
-            background: none !important;
-        }
-        .nav-menu-open{
-            background-color: #fff !important;
-        }
-        ul{
-            li{
-                a{
-                    color: #000 !important;
+    
+    #mainMenu{
+        #site-navigation{
+            .header-nav-container{
+                width: 100%;
+                box-sizing: border-box;
+                background: none !important;
+            }
+            .nav-menu-open{
+                background-color: #eee !important;
+                ul{
+                    padding: 0;
+                    li{
+                        a{
+                            display: block;
+                            line-height: 25px;
+                            padding: 0 3%;
+                            color: #000 !important;
+                        }
+                    }
                 }
             }
         }
     }
-}//header#masthead
 
-.main-image{
-    height: 350px;
-    background: {
-        repeat: no-repeat;
-        position: center center;
-        size: cover;
-    }
-}
+}//header#masthead
 
 #main{
     width: 100%;
     box-sizing: border-box;
+    
+    #primary{
+        #content{
+            padding: 0;
+        }
+    }
 }
 
 .itemimg{

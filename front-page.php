@@ -21,7 +21,7 @@
                 </div><!-- .sof -->
 
             <?php else: ?>
-                <div class="container-fluid">
+                <div class="container">
                     <?php /*<section class="front-il cf">*/ ?>
                     <section class="row">
 

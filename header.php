@@ -71,29 +71,38 @@
                 </div><!-- .snav -->
 			<?php endif; ?>
 			
-			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-			
-			<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
-            <<?php echo $heading_tag; ?> class="site-title">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                    <?php bloginfo( 'name' ); ?>
-                </a>
-            </<?php echo $heading_tag; ?>>
+			<div class="container">
+                <p class="site-description">
+                    <?php bloginfo( 'description' ); ?>
+                </p>
+
+                <?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
+                <<?php echo $heading_tag; ?> class="site-title">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                        <?php bloginfo( 'name' ); ?>
+                    </a>
+                </<?php echo $heading_tag; ?>>
+			</div>
 			
 		</div><!-- .inner -->
+		
+		<div id="mainMenu" class="container">
+		    <div class="row">
+            <?php /*if(! welcart_basic_is_cart_page()):*/ ?>
+                <nav id="site-navigation" class="main-navigation" role="navigation">
+                    <label for="panel"><span></span></label>
+                    <input type="checkbox" id="panel" class="on-off" />
+                    <?php 
+                        $page_c	=	get_page_by_path('usces-cart');
+                        $page_m	=	get_page_by_path('usces-member');
+                        $pages	=	"{$page_c->ID},{$page_m->ID}";
+                        wp_nav_menu( array( 'theme_location' => 'header', 'container_class' => 'nav-menu-open' , 'exclude' => $pages ,  'menu_class' => 'header-nav-container cf' ) );
+                    ?>
+                </nav><!-- #site-navigation -->
+            <?php /*endif;*/ ?>
+		    </div>
+		</div>
 
-		<?php if(! welcart_basic_is_cart_page()): ?>
-            <nav id="site-navigation" class="main-navigation" role="navigation">
-                <label for="panel"><span></span></label>
-                <input type="checkbox" id="panel" class="on-off" />
-                <?php 
-                    $page_c	=	get_page_by_path('usces-cart');
-                    $page_m	=	get_page_by_path('usces-member');
-                    $pages	=	"{$page_c->ID},{$page_m->ID}";
-                    wp_nav_menu( array( 'theme_location' => 'header', 'container_class' => 'nav-menu-open' , 'exclude' => $pages ,  'menu_class' => 'header-nav-container cf' ) );
-                ?>
-            </nav><!-- #site-navigation -->
-		<?php endif; ?>
 
 	</header><!-- #masthead -->
 
