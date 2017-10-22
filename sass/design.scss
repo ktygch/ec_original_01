@@ -73,6 +73,9 @@ header#masthead{
     #primary{
         #content{
             padding: 0;
+            article{
+                border-bottom: none;
+            }
         }
     }
 }
@@ -89,6 +92,9 @@ header#masthead{
 #secondary{
     float: none;
     border-top: none;
+    h3{
+        border-bottom: none;
+    }
 }
 
 

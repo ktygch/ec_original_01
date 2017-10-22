@@ -52,6 +52,8 @@ header#masthead {
   box-sizing: border-box; }
   #main #primary #content {
     padding: 0; }
+    #main #primary #content article {
+      border-bottom: none; }
 
 .itemimg a img {
   width: 100%;
@@ -60,6 +62,8 @@ header#masthead {
 #secondary {
   float: none;
   border-top: none; }
+  #secondary h3 {
+    border-bottom: none; }
 
 h1.item_page_title {
   margin-bottom: 30px;
