@@ -35,21 +35,24 @@ header#masthead {
       width: auto;
       padding: 0;
       text-align: left; }
-  header#masthead #mainMenu #site-navigation .header-nav-container {
-    width: 100%;
-    box-sizing: border-box;
-    background: none !important; }
-  header#masthead #mainMenu #site-navigation .nav-menu-open {
-    background-color: #eee !important; }
-    header#masthead #mainMenu #site-navigation .nav-menu-open ul {
-      padding: 0; }
-      header#masthead #mainMenu #site-navigation .nav-menu-open ul li a {
-        display: block;
-        color: #000 !important; }
+  header#masthead #mainMenu {
+    background-color: #000; }
+    header#masthead #mainMenu #site-navigation .header-nav-container {
+      width: 100%;
+      box-sizing: border-box;
+      background: none !important; }
+    header#masthead #mainMenu #site-navigation .nav-menu-open {
+      background-color: #eee !important; }
+      header#masthead #mainMenu #site-navigation .nav-menu-open ul {
+        padding: 0; }
+        header#masthead #mainMenu #site-navigation .nav-menu-open ul li a {
+          display: block;
+          color: #000 !important; }
 
 #main {
   width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0; }
   #main #primary #content {
     padding: 0; }
     #main #primary #content article {
@@ -61,7 +64,8 @@ header#masthead {
 
 #secondary {
   float: none;
-  border-top: none; }
+  border-top: none;
+  background-color: #ddd; }
   #secondary h3 {
     border-bottom: none; }
 

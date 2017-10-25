@@ -41,6 +41,7 @@ header#masthead{
     }
     
     #mainMenu{
+        background-color: #000;
         #site-navigation{
             .header-nav-container{
                 width: 100%;
@@ -69,7 +70,7 @@ header#masthead{
 #main{
     width: 100%;
     box-sizing: border-box;
-    
+    margin: 0;
     #primary{
         #content{
             padding: 0;
@@ -92,6 +93,7 @@ header#masthead{
 #secondary{
     float: none;
     border-top: none;
+    background-color: #ddd;
     h3{
         border-bottom: none;
     }

@@ -86,21 +86,23 @@
 			
 		</div><!-- .inner -->
 		
-		<div id="mainMenu" class="container">
-		    <div class="row">
-            <?php /*if(! welcart_basic_is_cart_page()):*/ ?>
-                <nav id="site-navigation" class="main-navigation" role="navigation">
-                    <label for="panel"><span></span></label>
-                    <input type="checkbox" id="panel" class="on-off" />
-                    <?php 
-                        $page_c	=	get_page_by_path('usces-cart');
-                        $page_m	=	get_page_by_path('usces-member');
-                        $pages	=	"{$page_c->ID},{$page_m->ID}";
-                        wp_nav_menu( array( 'theme_location' => 'header', 'container_class' => 'nav-menu-open' , 'exclude' => $pages ,  'menu_class' => 'header-nav-container cf' ) );
-                    ?>
-                </nav><!-- #site-navigation -->
-            <?php /*endif;*/ ?>
-		    </div>
+		<div id="mainMenu">
+            <div class="container">
+                <div class="row">
+                <?php /*if(! welcart_basic_is_cart_page()):*/ ?>
+                    <nav id="site-navigation" class="main-navigation" role="navigation">
+                        <label for="panel"><span></span></label>
+                        <input type="checkbox" id="panel" class="on-off" />
+                        <?php 
+                            $page_c	=	get_page_by_path('usces-cart');
+                            $page_m	=	get_page_by_path('usces-member');
+                            $pages	=	"{$page_c->ID},{$page_m->ID}";
+                            wp_nav_menu( array( 'theme_location' => 'header', 'container_class' => 'nav-menu-open' , 'exclude' => $pages ,  'menu_class' => 'header-nav-container cf' ) );
+                        ?>
+                    </nav><!-- #site-navigation -->
+                <?php /*endif;*/ ?>
+                </div>
+            </div>
 		</div>
 
 

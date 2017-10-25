@@ -8,9 +8,9 @@ global $usces; ?>
 
 <aside id="secondary" class="widget-area" role="complementary">
     
-    <div class="contianer">
+    <div class="container">
         <div class="row">
-            <div class="col-xs-30 col-sm-10 col-sm-offset-5">
+            <div class="col-xs-30 col-sm-10">
                 <?php if ( ! dynamic_sidebar( 'left-widget-area' ) ){
 
                     //Default Welcart Login Widget
@@ -70,10 +70,7 @@ global $usces; ?>
 
                 } ?>
             </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-xs-30 col-sm-16 col-sm-offset-7">
+            <div class="col-xs-30 col-sm-10">
                 <?php if ( ! dynamic_sidebar( 'right-widget-area' ) ): ?>
                     <?php
                         //Default Welcart Calendar Widget
@@ -93,6 +90,7 @@ global $usces; ?>
                 <?php endif; ?>
             </div>
         </div>
+        
     </div>
 
 </aside><!-- #secondary -->
