@@ -48,6 +48,12 @@ header#masthead {
         header#masthead #mainMenu #site-navigation .nav-menu-open ul li a {
           display: block;
           color: #000 !important; }
+    header#masthead #mainMenu.fixed {
+      width: 100%;
+      z-index: 1; }
+
+.fixed {
+  position: fixed; }
 
 #main {
   width: 100%;

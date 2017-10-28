@@ -1,7 +1,7 @@
 // JavaScript Document
 var gulp = require("gulp");
 var plumber = require("gulp-plumber");
-//var rename = require("gulp-rename");
+var rename = require("gulp-rename");
 var sass = require("gulp-sass");
 var uglify = require("gulp-uglify");
 
@@ -9,6 +9,7 @@ gulp.task("js", function(){
     gulp.src(["js/**/*.js", "!js/min/**/*.js"])
     .pipe(plumber())
     .pipe(uglify())
+    .pipe(rename({extname: '.min.js'}))
     .pipe(gulp.dest("./js/min"));
 });
 

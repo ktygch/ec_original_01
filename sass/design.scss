@@ -63,9 +63,17 @@ header#masthead{
                 }
             }
         }
+        &.fixed{
+            width: 100%;
+            z-index: 1;
+        }
     }
 
 }//header#masthead
+
+.fixed{
+    position: fixed;
+}
 
 #main{
     width: 100%;

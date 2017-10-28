@@ -28,5 +28,6 @@
 
         <?php wp_footer(); ?>
         <script src="<?php bloginfo('url'); ?>/wp-content/themes/ec_original_01/js/min/bootstrap.min.js"></script>
+        <script src="<?php bloginfo('url'); ?>/wp-content/themes/ec_original_01/js/min/default.min.js"></script>
 	</body>
 </html>

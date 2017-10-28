@@ -12,12 +12,10 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta name="format-detection" content="telephone=no"/>
 	
-	<?php wp_head(); ?>
-	
 	<link rel="stylesheet" href="<?php bloginfo('url'); ?>/wp-content/themes/ec_original_01/css/bootstrap.min.css">
 	<?php $timestamp = time() ?>
 	<link rel="stylesheet" href="<?php bloginfo('url'); ?>/wp-content/themes/ec_original_01/css/design.css?<?php echo $timestamp; ?>">
-	
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -86,7 +84,7 @@
 			
 		</div><!-- .inner -->
 		
-		<div id="mainMenu">
+		<div id="mainMenu" class="fixedmenu">
             <div class="container">
                 <div class="row">
                 <?php /*if(! welcart_basic_is_cart_page()):*/ ?>
