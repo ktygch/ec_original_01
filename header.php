@@ -29,62 +29,62 @@
             </div><!-- main-image -->
         <?php endif; ?>
 	
-		<div class="inner cf">
-		
-			<?php if(! welcart_basic_is_cart_page()): ?>
-                <div class="snav cf">
-
-                    <div class="search-box">
-                        <i class="fa fa-search"></i>
-                        <?php get_search_form(); ?>
-                    </div>
-
-                    <?php if(usces_is_membersystem_state()): ?>
-                        <div class="membership">
-                            <i class="fa fa-user"></i>
-                            <ul class="cf">
-                                <?php if( usces_is_login() ): ?>
-                                    <li><?php printf(__('Hello %s', 'usces'), usces_the_member_name('return')); ?></li>
-                                    <li><?php usces_loginout(); ?></li>
-                                    <li><a href="<?php echo USCES_MEMBER_URL; ?>"><?php _e('My page', 'welcart_basic') ?></a></li>
-                                <?php else: ?>
-                                    <li><?php _e('guest', 'usces'); ?></li>
-                                    <li><?php usces_loginout(); ?></li>
-                                    <li><a href="<?php echo USCES_NEWMEMBER_URL; ?>"><?php _e('New Membership Registration','usces') ?></a></li>
-                                <?php endif; ?>
-                            </ul>
-                        </div>
-                    <?php endif; ?>
-
-                    <div class="incart-btn">
-                        <a href="<?php echo USCES_CART_URL; ?>">
-                            <i class="fa fa-shopping-cart">
-                                <span><?php _e('In the cart', 'usces') ?></span>
-                            </i>
-                            <?php if(! defined( 'WCEX_WIDGET_CART' ) ): ?>
-                                <span class="total-quant"><?php usces_totalquantity_in_cart(); ?></span>
-                            <?php endif; ?>
-                        </a>
-                    </div>
-                </div><!-- .snav -->
-			<?php endif; ?>
-			
-			<div class="container">
-                <p class="site-description">
-                    <?php bloginfo( 'description' ); ?>
-                </p>
-
-                <?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
-                <<?php echo $heading_tag; ?> class="site-title">
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                        <?php bloginfo( 'name' ); ?>
-                    </a>
-                </<?php echo $heading_tag; ?>>
-			</div>
-			
-		</div><!-- .inner -->
 		
 		<div id="mainMenu" class="fixedmenu">
+            <div class="inner cf">
+
+                <?php if(! welcart_basic_is_cart_page()): ?>
+                    <div class="snav cf">
+
+                        <div class="search-box">
+                            <i class="fa fa-search"></i>
+                            <?php get_search_form(); ?>
+                        </div>
+
+                        <?php if(usces_is_membersystem_state()): ?>
+                            <div class="membership">
+                                <i class="fa fa-user"></i>
+                                <ul class="cf">
+                                    <?php if( usces_is_login() ): ?>
+                                        <li><?php printf(__('Hello %s', 'usces'), usces_the_member_name('return')); ?></li>
+                                        <li><?php usces_loginout(); ?></li>
+                                        <li><a href="<?php echo USCES_MEMBER_URL; ?>"><?php _e('My page', 'welcart_basic') ?></a></li>
+                                    <?php else: ?>
+                                        <li><?php _e('guest', 'usces'); ?></li>
+                                        <li><?php usces_loginout(); ?></li>
+                                        <li><a href="<?php echo USCES_NEWMEMBER_URL; ?>"><?php _e('New Membership Registration','usces') ?></a></li>
+                                    <?php endif; ?>
+                                </ul>
+                            </div>
+                        <?php endif; ?>
+
+                        <div class="incart-btn">
+                            <a href="<?php echo USCES_CART_URL; ?>">
+                                <i class="fa fa-shopping-cart">
+                                    <span><?php _e('In the cart', 'usces') ?></span>
+                                </i>
+                                <?php if(! defined( 'WCEX_WIDGET_CART' ) ): ?>
+                                    <span class="total-quant"><?php usces_totalquantity_in_cart(); ?></span>
+                                <?php endif; ?>
+                            </a>
+                        </div>
+                    </div><!-- .snav -->
+                <?php endif; ?>
+
+                <div class="container">
+                    <p class="site-description">
+                        <?php bloginfo( 'description' ); ?>
+                    </p>
+
+                    <?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
+                    <<?php echo $heading_tag; ?> class="site-title">
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                            <?php bloginfo( 'name' ); ?>
+                        </a>
+                    </<?php echo $heading_tag; ?>>
+                </div>
+
+            </div><!-- .inner -->
             <div class="container">
                 <div class="row">
                 <?php /*if(! welcart_basic_is_cart_page()):*/ ?>
