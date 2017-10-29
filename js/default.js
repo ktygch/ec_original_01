@@ -17,12 +17,28 @@
             var $this = $(this);
             
             if($this.data('initial') <= object.posY){
+                //要素を固定
                 if(!$this.hasClass('fixed')){
+                    var $substitute = $('<div></div>');
+                    $substitute
+                    .css({
+                        'margin': '0',
+                        'padding': '0',
+                        'font-size': '0',
+                        'height': '0'
+                    })
+                    .addClass('substitute')
+                    .height($this.outerHeight(true))
+                    .width($this.outerWidth(true));
+                    
                     $this
+                    .after($substitute)
                     .addClass('fixed')
                     .css({top: 0});
                 } 
             } else {
+                //要素の固定を解除
+                $this.next('.substitute').remove();
                 $this.removeClass('fixed');
             }
         });

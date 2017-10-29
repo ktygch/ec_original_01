@@ -15,7 +15,11 @@ header#masthead{
             size: cover;
         }
     }
-    
+}//header#masthead
+
+#mainMenu{
+    background-color: #fff;
+
     .inner.cf{
         width: 100%;
         box-sizing: border-box;
@@ -39,37 +43,33 @@ header#masthead{
             text-align: left;
         }
     }
-    
-    #mainMenu{
-        background-color: #fff;
-        #site-navigation{
-            .header-nav-container{
-                width: 100%;
-                box-sizing: border-box;
-                background: none !important;
-            }
-            .nav-menu-open{
-                background-color: #eee !important;
-                ul{
-                    padding: 0;
-                    li{
-                        a{
-                            display: block;
-                            //line-height: 25px;
-                            //padding: 0 3%;
-                            color: #000 !important;
-                        }
+
+    #site-navigation{
+        .header-nav-container{
+            width: 100%;
+            box-sizing: border-box;
+            background: none !important;
+        }
+        .nav-menu-open{
+            background-color: #eee !important;
+            ul{
+                padding: 0;
+                li{
+                    a{
+                        display: block;
+                        //line-height: 25px;
+                        //padding: 0 3%;
+                        color: #000 !important;
                     }
                 }
             }
         }
-        &.fixed{
-            width: 100%;
-            z-index: 1;
-        }
     }
-
-}//header#masthead
+    &.fixed{
+        width: 100%;
+        z-index: 1;
+    }
+}
 
 .fixed{
     position: fixed;
@@ -79,6 +79,7 @@ header#masthead{
     width: 100%;
     box-sizing: border-box;
     margin: 0;
+    //padding-top: 170px !important;
     #primary{
         #content{
             padding: 0;

@@ -16,41 +16,42 @@ header#masthead {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; }
-  header#masthead .inner.cf {
+
+#mainMenu {
+  background-color: #fff; }
+  #mainMenu .inner.cf {
     width: 100%;
     box-sizing: border-box;
     padding-bottom: 20px; }
-    header#masthead .inner.cf .snav.cf {
+    #mainMenu .inner.cf .snav.cf {
       padding-top: 0;
       margin-right: 0; }
-    header#masthead .inner.cf .site-description {
+    #mainMenu .inner.cf .site-description {
       float: none;
       width: auto;
       padding: 0;
       color: #000;
       background: none;
       font-weight: normal; }
-    header#masthead .inner.cf .site-title {
+    #mainMenu .inner.cf .site-title {
       float: none;
       width: auto;
       padding: 0;
       text-align: left; }
-  header#masthead #mainMenu {
-    background-color: #fff; }
-    header#masthead #mainMenu #site-navigation .header-nav-container {
-      width: 100%;
-      box-sizing: border-box;
-      background: none !important; }
-    header#masthead #mainMenu #site-navigation .nav-menu-open {
-      background-color: #eee !important; }
-      header#masthead #mainMenu #site-navigation .nav-menu-open ul {
-        padding: 0; }
-        header#masthead #mainMenu #site-navigation .nav-menu-open ul li a {
-          display: block;
-          color: #000 !important; }
-    header#masthead #mainMenu.fixed {
-      width: 100%;
-      z-index: 1; }
+  #mainMenu #site-navigation .header-nav-container {
+    width: 100%;
+    box-sizing: border-box;
+    background: none !important; }
+  #mainMenu #site-navigation .nav-menu-open {
+    background-color: #eee !important; }
+    #mainMenu #site-navigation .nav-menu-open ul {
+      padding: 0; }
+      #mainMenu #site-navigation .nav-menu-open ul li a {
+        display: block;
+        color: #000 !important; }
+  #mainMenu.fixed {
+    width: 100%;
+    z-index: 1; }
 
 .fixed {
   position: fixed; }
